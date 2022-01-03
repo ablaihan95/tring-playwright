@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --headed",
-    "loginTest": "npx playwright test -g 'basic test'",
+    "loginTest": "npx playwright test tests/spec/ui/LoginTest.spec.js'",
     "levelSleepTest": "npx playwright test tests/spec/ui/LevelSleepTest.spec.js",
-    "mtest": "mocha"
+    "mtest": "mocha tests/spec/api"
   },
   "keywords": [],
   "author": "",

@@ -26,11 +26,15 @@ jobs:
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-#      - run:
-#          command: npm install
       - run:
           name: Run level
-          command: npm run levelSleepTest 
+          command: npm run levelSleepTest
+      - run:
+          name: Run login
+          command: npm run loginTest
+      - run:
+          name: Run api
+          command: npm run mtest
 
 workflows:
   # Below is the definition of your workflow.
